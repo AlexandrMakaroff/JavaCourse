@@ -13,8 +13,7 @@ public class Main {
 
     private static String getFact() throws IOException {
 
-//        int randomNumber = (int) (Math.random() * 1000000);
-        int randomNumber = 100500;
+        int randomNumber = (int) (Math.random() * 1000000);
         String url = "http://numbersapi.com/" + randomNumber + "/trivia";
         System.out.println(url);
 
@@ -75,8 +74,8 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Map<Character, Integer> frequency = new HashMap<Character, Integer>();
-        ArrayList<Character> charsCloseAverage = new ArrayList<Character>();
+        Map<Character, Integer> frequency = new HashMap<>();
+        ArrayList<Character> charsCloseAverage = new ArrayList<>();
         int numOfUniqueSymbols = 0, numOfAllSymbols = 0;
 
         String fact = getFact();
