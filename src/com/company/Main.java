@@ -91,7 +91,7 @@ public class Main {
             ++numOfAllSymbols;
         }
 
-        showAnswer(frequency, Math.round(numOfAllSymbols / numOfUniqueSymbols), charsCloseAverage);
+        showAnswer(frequency, Math.round((float) numOfAllSymbols / (float) numOfUniqueSymbols), charsCloseAverage);
         additionalTask(numOfAllSymbols, numOfUniqueSymbols, charsCloseAverage);
     }
 }
